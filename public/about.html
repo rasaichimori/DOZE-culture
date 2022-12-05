@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOZE CULTURE</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="mainmagic.css">
+      <style>
+          h2{
+              position: relative;
+              top: 15%;
+          }
+          p{
+              color: white;
+          }
+          #back{
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              top: 80%;
+          }
+          #back a{
+              text-decoration: none;
+              color: white;
+          }
+          #back a:hover{
+              text-decoration: underline;
+          }
+
+          #image{
+              position: absolute;
+              right: 55%;
+              top: 250px;
+          }
+          #image img{
+              height: 300px;
+          }
+          
+          #socials{
+              position: absolute;
+              left: 55%;
+              top: 325px;
+              text-align: left;
+              float: left;
+              word-spacing: 10px;
+              display: block;
+          }
+          #socials img{
+              height: 25px;
+          }
+          #socials img:hover{
+              height: 30px;
+          }
+          
+          #paragraph{
+              position: absolute;
+              left: 55%;
+              top: 400px;
+              text-align: left;
+          }
+          #paragraph a{
+              color: white;
+              font-style:italic;
+              text-decoration: none;
+          }
+          #paragraph a:hover{
+              text-decoration: underline;
+          }
+      </style>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.js"></script>
+    <script>var page = 'about';</script>
+    <script src="setup.js"></script>
+
+  </head>
+    
+  <body>
+      
+      <div id="container">
+<!--          <h1 id="header" class="title">DOZE CULTURE</h1>-->
+
+
+          <h2 id="temp" class="title">about me</h2>
+          <div id="image">
+              <img src="test.jpg">
+          </div>
+          
+          <div id ="socials">
+              <a href="https://soundcloud.com/officialrai"><img src="icons/soundcloud-icon.png"></a>
+              <a href="https://open.spotify.com/artist/02XjTOUw55eQr8KgsAHRYD?si=3XG6_fSXQPa_BaSzKcegrg"><img src="icons/spotify-icon.png"></a>
+              <a href="https://www.youtube.com/channel/UCwN2fwP_oEyHNPCFZmAicPQ"><img src="icons/youtube-icon.png"></a>
+              <a href="https://www.instagram.com/this.is.rai/"><img src="icons/insta-icon.png"></a>
+          </div>
+          
+          <div id="paragraph" border="solid" height="20px">
+              <p>hi.</p>
+              <p>i'm rasa.</p>
+              <p>i'm also rai.</p>
+              <p>i'm japanese.</p>
+              <p>i like to code, draw, and make music.</p>
+<!--              <p>here are some other projects that i have worked on</p>-->
+              <h4><a href="contact.html">contact me for commissions</a></h4>
+          </div>
+          
+          <div id="back">
+            <a href="index.html">back to home</a>
+          </div>
+          
+          <div class="lightbox">
+              <div class="lightbox-box">
+                <div class="lightbox-content" id="lightbox-c">
+                </div>
+              </div>
+          </div>
+
+          
+          
+          <footer class="site-footer">
+                <li>&copy;2020<a href="index.html">   doze culture</a></li><!-- .footer-copyright -->
+                <li style="float:right"><a class="up_arrow" href="#header">
+                        <span>
+                            up <span class="arrow" aria-hidden="true">&uarr;</span>						
+                        </span><!-- .to-the-top-short -->
+                    </a></li>
+          </footer><!-- #site-footer -->
+      </div>
+    </body>
+</html>

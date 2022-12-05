@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+      body{
+            background-color: #EBC5C8;
+            text-decoration: none;
+            font-family: sans-serif;
+            text-align: center;
+     }
+        
+    /*lightbox*/
+    .lightbox{
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .lightbox-box{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lightbox-box img{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lightbox-content{
+        position: absolute;
+        top:0;
+        left: 0;
+        width:100%;
+        height:100%;
+    }
+      
+    </style>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="outlineMaker.js"></script>
+
+  </head>
+    <body>
+        <div class="lightbox">
+              <div class="lightbox-box">
+                <img src="gallery/lil-girl.png">  
+                <div class="lightbox-content" id="lightbox-c">
+                </div>
+              </div>
+        </div>
+        <p></p>
+    </body>
+</html>

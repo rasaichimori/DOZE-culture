@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="mainmagic.css">
+      <style>
+          .title{
+              position: relative;
+              left: auto;
+              transform: translate(0,0);
+              top: 200px;
+              z-index: 1;
+          }
+          .title h2{
+              color: white;
+              text-align: center; 
+          }
+          
+          body{
+              background-color: black;
+          }
+          
+          #back{
+              position: relative;
+              width: 100%;
+              text-align: center;
+              padding-top: 20px;
+          }
+          #back a{
+              text-decoration: none;
+              color: white;
+          }
+          #back a:hover{
+              text-decoration: underline;
+          }
+          
+          #socials{
+              position: absolute;
+              width: 100%;
+              top: 325px;
+              text-align: center;
+              word-spacing: 5px;
+              display: block;
+              z-index: 2;
+          }
+          #socials img{
+              height: 30px;
+          }
+          #email{
+              position: relative;
+              width: 100%;
+              padding-top: 50px;
+              text-align: center;
+          }
+          #email a{
+              color: white;
+              text-decoration: none;
+          }
+          #email a:hover{
+              text-decoration: underline;
+          }
+          
+          #paragraph{
+              position: relative;
+              padding-top:400px;
+              left: 50%;
+              transform:translate(-50%,0);
+              width: 80%;
+              text-align: center;
+          }
+          #lilmessage{
+              position: relative;
+              padding-top:600px;
+              left: 50%;
+              transform:translate(-50%,0);
+              margin: auto;
+              text-align: center;
+          }
+          .padding{
+              padding-bottom: 100px;
+          }
+      </style>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.js"></script>
+    <script>var page = 'contact';</script>
+    <script src="setup.js"></script>
+    <script src="blob.js"></script>
+    <script>
+        draw = function() {
+          background(0);
+          Alldots.forEach(dot => {
+            dot.update();
+            dot.move();
+            dot.border();
+            dot.display();
+          });
+          // text(allPosx,10,10);
+        };
+    </script>
+
+  </head>
+    
+  <body>
+      
+      <div id="container">
+<!--          <h1 id="header" class="title">DOZE CULTURE</h1>-->
+
+
+          <h2 id="temp" class="title">contact</h2>
+          <div id ="socials">
+              <a href="https://soundcloud.com/officialrai"><img src="icons/soundcloud-icon.png"></a>
+              <a href="https://open.spotify.com/artist/02XjTOUw55eQr8KgsAHRYD?si=3XG6_fSXQPa_BaSzKcegrg"><img src="icons/spotify-icon.png"></a>
+              <a href="https://www.youtube.com/channel/UCwN2fwP_oEyHNPCFZmAicPQ"><img src="icons/youtube-icon.png"></a>
+              <a href="https://www.instagram.com/this.is.rai/"><img src="icons/insta-icon.png"></a>
+              <a href="https://www.instagram.com/this.is.rai/"><img src="icons/insta-icon.png"></a>
+              <a href="https://open.spotify.com/artist/02XjTOUw55eQr8KgsAHRYD?si=3XG6_fSXQPa_BaSzKcegrg"><img src="icons/spotify-icon.png"></a>
+              <a href="https://www.youtube.com/channel/UCwN2fwP_oEyHNPCFZmAicPQ"><img src="icons/youtube-icon.png"></a>
+          </div>
+          
+          <div id="paragraph">
+              <p>i love to chat ☂ you can direct message me on any of those social media platforms and i'll usually respond pretty soon ☂ also, i can help you with any art, music, or website projects so ask me about those and we can make something cool together ☂</p>
+          </div>
+          
+          <div id="email">
+              <p>email me at: <a href="https://theraiofficial@gmail.com">theraiofficial@gmail.com</a></p>
+          </div>
+          
+          <div id="back">
+            <a href="index.html">back to home</a>
+          </div>
+          
+          <div id="lilmessage">
+              <p>a lil space to play with my social dots</p>
+          </div>
+          
+          <div class="lightbox">
+              <div class="lightbox-box">
+                <div class="lightbox-content" id="lightbox-c">
+                </div>
+              </div>
+          </div>
+
+          <div class="padding">
+          </div>
+          
+          <footer class="site-footer">
+                <li>&copy;2020<a href="index.html">   doze culture</a></li><!-- .footer-copyright -->
+                <li style="float:right"><a class="up_arrow" href="#header">
+                        <span>
+                            up <span class="arrow" aria-hidden="true">&uarr;</span>						
+                        </span><!-- .to-the-top-short -->
+                    </a></li>
+          </footer><!-- #site-footer -->
+      </div>
+    </body>
+</html>

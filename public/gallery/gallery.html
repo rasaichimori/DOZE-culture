@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOZE CULTURE</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="mainmagic.css">
+    <link rel="stylesheet" href="gallerymagic.css">
+      
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.js"></script>
+    <script>
+      var page = 'gallery';
+    </script>
+      
+    <script src="setup.js"></script>
+    <script src="walkanimate.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="pointOver.js"></script>
+
+  </head>
+    
+  <body>
+      <div id="container">
+          <h1 id="header" class="title">DOZE CULTURE</h1>
+
+
+          <div class="lightbox">
+            <div class="lightbox-bg" onclick="closeLb();"></div>
+            <div class="lightbox-box">
+                <div class="lightbox-content" id="lightbox-c">
+                    <span class="lightbox-close" onclick="closeLb();">&times;</span>
+                </div>
+                
+
+            </div>
+
+
+          </div>
+
+
+          <div class="padding" style="padding: 50px"></div>
+
+          <div class="background"></div>
+
+          <div class="padding" style="padding: 100px"></div>
+
+          <div id="menu" class="menu">
+              <a href="index.html">HOME</a>
+              <a href="music.html">MUSIC</a>
+              <a href="clothes.html">CLOTHES</a>
+              <a href="gallery.html">GALLERY</a>
+              <a href="contact.html">CONTACT</a>
+              <a href="about.html">ABOUT</a>
+          </div>
+
+          <div class="g_container">
+              <div class="gallery">
+                  <img src="vectorGallery/artist-page.svg" onclick="openLb(); slidenum = 0;">
+              </div>
+              <div class="gallery">
+                  <img src="vectorGallery/lil-girl.svg" onclick="openLb(); slidenum = 1;">   
+              </div>
+             <div class="gallery">
+                 <img src="vectorGallery/phonegirl.svg" onclick="openLb(); slidenum = 2;">
+              </div>
+              <div class="gallery">
+                 <img src="vectorGallery/dark-man.svg" onclick="openLb(); slidenum = 3;">
+              </div>
+              <div class="gallery">
+                  <img src="vectorGallery/skull.svg" onclick="openLb(); slidenum = 4;">
+              </div>
+              <div class="gallery">
+                  <img src="vectorGallery/flower.svg" onclick="openLb(); slidenum = 5;">
+              </div>
+              <div class="gallery">
+                  <img src="vectorGallery/dark-dragon.svg" onclick="openLb(); slidenum = 6;">
+              </div>
+              <div class="gallery">
+                  <img src="vectorGallery/light-dragon.svg" onclick="openLb(); slidenum = 7;">
+              </div>
+              <div class="gallery">
+                  <img src="vectorGallery/mask-1.svg" onclick="openLb(); slidenum = 8;">
+              </div>
+          </div>
+
+
+
+
+
+          <footer class="site-footer">
+                <li>&copy;2020<a href="index.html">   doze culture</a></li><!-- .footer-copyright -->
+                <li style="float:right"><a class="up_arrow" href="#header">
+                        <span>
+                            up <span class="arrow" aria-hidden="true">&uarr;</span>						
+                        </span><!-- .to-the-top-short -->
+                    </a></li>
+          </footer><!-- #site-footer -->
+      </div>
+    </body>
+    <script>
+        var mnu = document.getElementById('menu');
+
+        var stickym = mnu.offsetTop;
+
+        window.onscroll = function() {scroller()};
+
+        function scroller() {
+            const sY = window.scrollY;
+
+            if (sY>stickym){
+                mnu.classList.add('sticky');
+            }
+            else{
+                mnu.classList.remove('sticky');
+            }
+        };
+    </script>
+</html>

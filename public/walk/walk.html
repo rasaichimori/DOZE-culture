@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALK CULTURE</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="../mainmagic.css">
+    <link rel="stylesheet" href="walkmagic.css">
+      
+    <script src="../p5.min.js"></script>
+    <script src="../p5.sound.js"></script>
+    <script>
+      var page = 'walk';
+    </script>
+    <script src="../setup.js"></script>
+    <script>
+        var sY = 0;
+        var NumberOfFrames = 12;
+        var Y = 0;
+        function mouseWheel(event){
+            sY += event.delta;
+        };
+        
+        function draw(){
+
+            clear();
+            noFill();
+            stroke(255);
+            lightbox.style('cursor','default');
+            
+            Y+=(sY-Y)/10;
+            g = floor((((Y/10)%12)+12)%12);
+            for(var i = 0; i<floor(width/310)+2;i++){
+//                var rep = ((((i*310)-x)%(width+310))+(width+310))%(width+310)-310
+                var rep = ((floor(width/310)+1)*310);
+                var x = (((((i*310)-(Y*2))%rep)+rep)%rep)-310;
+                image(bgslide[g],x,80);
+            }
+            
+            pmCount = mCount;
+        }
+    </script>
+
+  </head>
+    
+  <body>
+      <div class="base"></div>
+      
+      <div id="container">
+          <h1 id="header" class="title">DOZE CULTURE</h1>
+          
+          <div class="lightbox">
+              <div class="lightbox-box">
+                <div class="lightbox-content" id="lightbox-c"></div>
+              </div>
+          </div>
+          <div class="background"></div>
+          <a class="backButton" href="/public/index.html"><h3>back to home</h3></a>
+
+          <footer class="site-footer">
+                <li>&copy;2020<a href="index.html">   doze culture</a></li><!-- .footer-copyright -->
+                <li style="float:right"><a class="up_arrow" href="#header">
+                        <span>
+                            up <span class="arrow" aria-hidden="true">&uarr;</span>						
+                        </span><!-- .to-the-top-short -->
+                    </a></li>
+          </footer><!-- #site-footer -->
+      </div>
+              
+      <div class = "padding"></div>
+    </body>
+</html>
