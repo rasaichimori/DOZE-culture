@@ -1,0 +1,22 @@
+{
+  "name": "dozeculture.com",
+  "version": "1.0.0",
+  "description": "break the box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasaichimori/dozeculture.git"
+  },
+  "author": "rasa ichimori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasaichimori/dozeculture/issues"
+  },
+  "homepage": "https://github.com/rasaichimori/dozeculture#readme",
+  "dependencies": {
+    "vite": "^4.4.8"
+  }
+}
