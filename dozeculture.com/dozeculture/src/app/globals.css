@@ -17,11 +17,16 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  /* background-color: red;
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+  background: repeating-linear-gradient(45deg,
+      rgb(255, 153, 179),
+      rgb(255, 153, 179) 20px,
+      black 1px,
+      black 40px);
 }
